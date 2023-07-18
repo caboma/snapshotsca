@@ -1,0 +1,30 @@
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  background-color: transparent;
+  padding: 0.3rem 1.5rem;
+}
+
+.nav__links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__links a {
+  color: #ffc15e;
+  padding: 0.50rem;
+  border-radius: 0.50rem;
+}
+
+.nav__links a:hover {
+  border: 0.1rem solid #f7934c;
+  color: #f4f1ee;
+  background-color: #f7934c;
+}
+
+.logo img {
+  height: 2.5rem;
+}
