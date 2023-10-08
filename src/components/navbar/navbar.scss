@@ -1,0 +1,91 @@
+@import '../style/variables.scss';
+
+.top__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background-color: transparent;
+  padding: 0.3rem 5rem;
+  position: fixed;
+}
+
+.top__nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.top__nav-links a {
+  color: $text_dark;
+  padding: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+
+.top__nav-links a:hover {
+  color: $secondary;
+  transition: ease-in 200ms;
+}
+
+.logo img {
+  height: 2.5rem;
+}
+
+.side__nav {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  margin: 0.25rem;
+  left: 15px;
+  top: 30%;
+  transform: translate(-50%, 50%);
+  background-color: $secondary;
+  border-radius: 0px 15px 15px 0px;
+  padding: 0.2rem;
+}
+
+.side__nav-item {
+  margin: .75rem;
+  cursor: pointer;
+  color: $white;
+  font-size: 1rem;
+}
+
+.side__nav-item:hover {
+  margin: .75rem;
+  cursor: pointer;
+  color: $hover;
+  font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 1007px) {
+
+  .nav_container {
+    padding: 0.3rem 3rem;
+  }
+
+  .top__nav-links a {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+  .nav_container {
+    padding: 0.3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top__nav-links {
+    display: none;
+  }
+
+  .side__nav {
+    display: block;
+  }
+}

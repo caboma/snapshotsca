@@ -1,15 +1,17 @@
 import { BrowserRouter } from 'react-router-dom'
 import Navbar from './components/navbar/Navbar';
-import Slider from './components/slider/Slider';
 
-import './App.css';
+
+import './App.scss';
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Slider />
-    </BrowserRouter>
+    <div className='main__container'>
+      <BrowserRouter>
+        <Navbar />
+      </BrowserRouter>
+    </div>
+
 
   );
 }

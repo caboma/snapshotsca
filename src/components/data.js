@@ -1,22 +1,24 @@
+import { FaHome, FaCameraRetro, FaInfo, FaPhoneAlt } from "react-icons/fa";
+
 export const links = [
   {
-    name: "Home",
-    path: '/'
+    name: "HOME",
+    path: '/',
+    icon: <FaHome />
   },
   {
-    name: "We Offer",
-    path: '/services'
+    name: "PORTFOLIO",
+    path: '/portfolio',
+    icon: <FaCameraRetro />
   },
   {
-    name: "Portfolio",
-    path: '/portfolio'
+    name: "BIO",
+    path: '/biography',
+    icon: <FaInfo />
   },
   {
-    name: "Bio",
-    path: '/biography'
-  },
-  {
-    name: "Contact",
-    path: '/contact'
+    name: "CONTACT",
+    path: '/contact',
+    icon: <FaPhoneAlt />
   }
 ]

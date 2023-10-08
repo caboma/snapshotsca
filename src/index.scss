@@ -1,3 +1,5 @@
+@import '../src/components/style/variables.scss';
+
 *,
 *::after,
 *::before {
@@ -8,12 +10,11 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  color: rgb(249, 246, 246);
-  background-color: black;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $background;
 }
