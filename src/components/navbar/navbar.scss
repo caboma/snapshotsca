@@ -5,8 +5,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  background-color: transparent;
-  padding: 0.3rem 5rem;
+  background-color: $background;
+  padding: 0.2rem 5rem;
   position: fixed;
 }
 
@@ -29,33 +29,30 @@
 }
 
 .logo img {
-  height: 2.5rem;
+  height: 2rem;
 }
 
 .side__nav {
   display: none;
   flex-direction: column;
   position: fixed;
-  margin: 0.25rem;
-  left: 15px;
-  top: 30%;
-  transform: translate(-50%, 50%);
-  background-color: $secondary;
+  left: 0px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: $opacity;
   border-radius: 0px 15px 15px 0px;
-  padding: 0.2rem;
+
 }
 
 .side__nav-item {
-  margin: .75rem;
-  cursor: pointer;
+  margin: 1.5rem 0.75rem;
   color: $white;
   font-size: 1rem;
 }
 
 .side__nav-item:hover {
-  margin: .75rem;
   cursor: pointer;
-  color: $hover;
+  color: $secondary;
   font-size: 1rem;
 }
 
