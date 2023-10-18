@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import Logo from '../../images/snapshots_logo_light.png'
-import { links } from '../data'
+import { navLinks } from '../../helpers/data'
 import './Navbar.scss'
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
         </Link>
         <ul className='top__nav-links'>
           {
-            links.map(({ name, path }, index) => {
+            navLinks.map(({ name, path }, index) => {
               return (
                 <li><NavLink to={path} key={index}> {name} </NavLink></li>
               )
@@ -22,7 +22,7 @@ const Navbar = () => {
       </div>
       <div className='side__nav'>
         {
-          links.map(({ path, icon }, index) => {
+          navLinks.map(({ path, icon }, index) => {
             return (
               <NavLink to={path} key={index}>
                 <div className='side__nav-item'>

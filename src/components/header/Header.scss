@@ -1,8 +1,44 @@
 @import '../style/variables.scss';
 
 .header__container {
-  height: 95vh;
-  background-image: url('../../images/OSC_3589.jpg');
+  height: 100vh;
   background-size: cover;
   background-position: center;
+}
+
+.slider {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+  &__image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  &__leftArrow {
+    position: absolute;
+    color: $white;
+    bottom: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+
+  &__rightArrow {
+    position: absolute;
+    color: $white;
+    bottom: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+
+  &__indicators {
+    position: absolute;
+    color: $white;
+    bottom: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
 }
