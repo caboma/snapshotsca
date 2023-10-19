@@ -22,18 +22,3 @@ export const navLinks = [
     icon: <FaPhoneAlt />
   }
 ]
-
-export const sliderList = [
-  {
-    src: "../../images/OSC_3589.jpg",
-    alt: "../../images/OSC_3589.jpg",
-    title: "Title One",
-    subtitle: "SubTitle One"
-  },
-  {
-    src: "../../images/OSC_3589.jpg",
-    alt: "../../images/OSC_3589.jpg",
-    title: "Title Two",
-    subtitle: "SubTitle Two"
-  }
-]

@@ -1,44 +1,63 @@
 @import '../style/variables.scss';
 
 .header__container {
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 .slider {
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  flex-direction: row;
+
+  justify-content: center;
 
   &__image {
+    width: 100%;
+    height: 100vh;
     object-fit: cover;
     object-position: center;
-    width: 100%;
-    margin: 0;
+
+    &-hidden {
+      display: none;
+    }
   }
 
   &__leftArrow {
     position: absolute;
     color: $white;
     bottom: 2rem;
-    margin-right: 2rem;
+    margin-right: 5rem;
+
     cursor: pointer;
   }
 
   &__rightArrow {
     position: absolute;
+
     color: $white;
     bottom: 2rem;
-    margin-right: 2rem;
+    margin-left: 5rem;
     cursor: pointer;
   }
 
   &__indicators {
+    display: flex;
     position: absolute;
-    color: $white;
-    bottom: 2rem;
-    margin-right: 2rem;
+    bottom: 2.3rem;
+  }
+
+  &__indicator {
+    border-radius: 100%;
+    background-color: $white;
+    height: 0.5rem;
+    width: 0.5rem;
+    border: none;
+    outline: none;
+    margin: 0 1rem;
     cursor: pointer;
+
+    &-hidden {
+      background-color: $white_opacity;
+    }
   }
 }
