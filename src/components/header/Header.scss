@@ -53,11 +53,11 @@
     width: 0.5rem;
     border: none;
     outline: none;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     cursor: pointer;
 
-    &-hidden {
-      background-color: $white_opacity;
+    &-inactive {
+      background-color: $background;
     }
   }
 }

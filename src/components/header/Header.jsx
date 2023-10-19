@@ -1,6 +1,6 @@
 import './Header.scss'
 import { sliderList } from '../../helpers/headerData'
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
+import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa'
 import { useState } from 'react'
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <div className="header__container">
       <div className='slider'>
-        <FaArrowLeft className='slider__leftArrow' onClick={slideLeft} />
+        <FaLongArrowAltLeft className='slider__leftArrow' onClick={slideLeft} />
         {
           sliderList.map((imageList, index) => {
             return (
@@ -24,12 +24,14 @@ const Header = () => {
             )
           })
         }
-        <FaArrowRight className='slider__rightArrow' onClick={slideRight} />
+
+        <FaLongArrowAltRight className='slider__rightArrow' onClick={slideRight} />
+
         <span className='slider__indicators'>
           {
             sliderList.map((_, index) => {
               return (
-                <button key={index} onClick="" className={slide === index ? "slider__indicator" : "slider__indicator-hidden"}></button>
+                <button key={index} className="slider__indicator" onClick={() => setSlide(index)} />
               )
             })
           }
