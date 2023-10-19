@@ -7,10 +7,10 @@ const Header = () => {
   const [slide, setSlide] = useState(0);
 
   const slideLeft = () => {
-    setSlide(slide - 1);
+    setSlide(slide === 0 ? sliderList.length - 1 : slide - 1);
   }
   const slideRight = () => {
-    setSlide(slide + 1);
+    setSlide(slide === sliderList.length - 1 ? 0 : slide + 1);
   }
 
   return (
