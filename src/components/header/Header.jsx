@@ -14,30 +14,41 @@ const Header = () => {
   }
 
   return (
-    <div className="header__container">
+    <section className="header__container">
       <div className='slider'>
-        <FaLongArrowAltLeft className='slider__leftArrow' onClick={slideLeft} />
         {
           sliderList.map((imageList, index) => {
             return (
-              <img src={imageList.src} alt={imageList.alt} key={index} className={slide === index ? "slider__image" : "slider__image-hidden"} />
+              <>
+                <img src={imageList.src} alt={imageList.alt} key={index} className={slide === index ? "slider__image" : "slider__image-hidden"} />
+                <div className={slide === index ? "slider__caption" : "slider__caption-inactive"}>
+                  <h1>{imageList.caption}</h1>
+                  <p>{imageList.desc}</p>
+                </div>
+              </>
             )
           })
         }
 
-        <FaLongArrowAltRight className='slider__rightArrow' onClick={slideRight} />
+        <FaLongArrowAltLeft className='slider__leftArrow' onClick={slideLeft} />
 
         <span className='slider__indicators'>
           {
-            sliderList.map((_, index) => {
+            sliderList.map((imageList, index) => {
               return (
-                <button key={index} className="slider__indicator" onClick={() => setSlide(index)} />
+                <button key={index} className={slide === index ? "slider__indicator-selected" : "slider__indicator"} onClick={() => setSlide(index)} />
               )
+
             })
           }
         </span>
+
+
+        <FaLongArrowAltRight className='slider__rightArrow' onClick={slideRight} />
+
+
       </div>
-    </div>
+    </section>
   )
 }
 

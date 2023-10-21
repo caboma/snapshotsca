@@ -4,13 +4,13 @@ export const sliderList = [
   {
     src: Image1,
     alt: 'image1',
-    title: "Title One",
-    subtitle: "SubTitle One"
+    caption: "Title One",
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
   },
   {
     src: Image2,
     alt: 'image2',
-    title: "Title Two",
-    subtitle: "SubTitle Two"
+    caption: "Title Two",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolor?"
   }
 ]
