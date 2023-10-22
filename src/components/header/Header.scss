@@ -3,6 +3,7 @@
 .header__container {
   width: 100%;
   height: 100%;
+  background-color: $text_dark;
 }
 
 .slider {
@@ -29,6 +30,7 @@
     width: 1.5rem;
     height: 1.5rem;
     cursor: pointer;
+
   }
 
   &__rightArrow {
@@ -87,6 +89,20 @@
 
     &-inactive {
       display: none;
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 5s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.4;
+    }
+
+    100% {
+      opacity: 1;
     }
   }
 }

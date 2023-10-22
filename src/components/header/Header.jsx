@@ -20,7 +20,7 @@ const Header = () => {
 
     timerRef.current = (setTimeout(() => {
       slideRight();
-    }, 3000))
+    }, 6000))
   })
 
   return (
@@ -31,8 +31,8 @@ const Header = () => {
           sliderList.map((imageList, index) => {
             return (
               <>
-                <img src={imageList.src} alt={imageList.alt} key={index} className={slide === index ? "slider__image" : "slider__image-hidden"} />
-                <div className={slide === index ? "slider__caption" : "slider__caption-inactive"}>
+                <img src={imageList.src} alt={imageList.alt} key={index} className={slide === index ? "slider__image fade-in" : "slider__image-hidden"} />
+                <div className={slide === index ? "slider__caption fade-in" : "slider__caption-inactive"}>
                   <h1 >{imageList.caption}</h1>
                   <p>{imageList.desc}</p>
                 </div>
